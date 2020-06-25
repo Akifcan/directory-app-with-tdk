@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+$background-color: #ff4d4d;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    font-family: 'Karla', sans-serif;
+}
+
+header{
+    height: 10vh;
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    h1{
+        cursor: pointer;
+        font-size: 2em;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            cursor: pointer;
+            margin: 1em;
+            font-size: 1.3em;
+        }
+    }
+}
+
+main{
+    position: relative;
+    article{
+        width: 80%;
+        margin: 2em auto;
+       h2{
+            font-size: 1.5em;
+        }
+        p{
+            margin-top: 1em;
+            line-height: 1.5;
+            font-size: 1.1em;
+        }
+    }
+}
+
+.mean{
+    color: white;
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    background-color: $background-color;
+    transform: translateY(100%);
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: space-evenly;
+    padding: 4em;
+    .mean-text{
+        width: 50%;
+    }
+}
+
+.mean.active{
+    transform: translateY(0);
+}
+
+
+.settings{
+    .settings-area{
+        transform: translateX(80%);
+        position: relative;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        justify-content: space-evenly;
+        height: 100px;
+        width: 250px;
+        right: 0;
+        top: 0;
+        background-color: $background-color;
+        transition: all .5s ease;
+        div > p{
+            color: white;
+            font-size: 1.2em;
+        }
+        select{
+            padding: .5em;
+            width: 100%;
+        }
+    }
+    .vertical{
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        writing-mode: vertical-lr;
+        color: white;
+        font-size: 1.5em;
+        margin-left: .5em;
+    }
+}
+
+.settings-area.active{
+    transform: translateX(0);
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+

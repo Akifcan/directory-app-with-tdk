@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: whitesmoke;
+  font-family: 'Karla', sans-serif;
+}
+
+header {
+  height: 10vh;
+  background-color: #ff4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: white;
+}
+
+header h1 {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  cursor: pointer;
+  margin: 1em;
+  font-size: 1.3em;
+}
+
+main {
+  position: relative;
+}
+
+main article {
+  width: 80%;
+  margin: 2em auto;
+}
+
+main article h2 {
+  font-size: 1.5em;
+}
+
+main article p {
+  margin-top: 1em;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+.mean {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  height: 7vh;
+  width: 100%;
+  background-color: #ff4d4d;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 4em;
+}
+
+.mean .mean-text {
+  width: 50%;
+}
+
+.mean.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.settings .settings-area {
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100px;
+  width: 250px;
+  right: 0;
+  top: 0;
+  background-color: #ff4d4d;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.settings .settings-area div > p {
+  color: white;
+  font-size: 1.2em;
+}
+
+.settings .settings-area select {
+  padding: .5em;
+  width: 100%;
+}
+
+.settings .vertical {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  color: white;
+  font-size: 1.5em;
+  margin-left: .5em;
+}
+
+.settings-area.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=style.css.map */
